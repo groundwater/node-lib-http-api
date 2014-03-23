@@ -1,5 +1,7 @@
 # lib-http-api
 
+[![Build Status](https://travis-ci.org/groundwater/node-lib-http-api.svg?branch=master)](https://travis-ci.org/groundwater/node-lib-http-api)
+
 ## install
 
 ```bash
@@ -44,7 +46,9 @@ switch off a server request
 
 ```javascript
 api.handle('GET', '/search/spicy+noodles?order=desc&limit=100');
-// search
+// { handle: 'search',
+//   params: { query: 'spicy+noodles' },
+//   query: { order: 'desc', limit: '100' } }
 ```
 
 You'll want to associate the tokens returned with route handlers.
