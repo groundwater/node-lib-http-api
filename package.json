@@ -1,0 +1,30 @@
+{
+  "name": "lib-http-api",
+  "version": "0.0.0",
+  "description": "## install",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint index.js && tap test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/groundwater/node-lib-http-api.git"
+  },
+  "author": "Jacob Groundwater <groundwater@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/groundwater/node-lib-http-api/issues"
+  },
+  "homepage": "https://github.com/groundwater/node-lib-http-api",
+  "devDependencies": {
+    "tap": "^0.4.8",
+    "jshint": "^2.4.4"
+  },
+  "dependencies": {
+    "lib-route-generator": "^0.1.0",
+    "lib-route-matcher": "0.0.0"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
