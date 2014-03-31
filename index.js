@@ -1,5 +1,7 @@
 "use strict";
 
+var assert = require('assert');
+
 function API() {
   this.handles = {};
   this.host    = null;
@@ -40,6 +42,8 @@ API.prototype.add = function add(handle, iface) {
 */
 API.prototype.request = function request(handle, params, options) {
   var face = this.handles[handle];
+  assert(face, 'interface "' + handle + '" does not exit');
+
   var gen  = face.generator;
 
   var base = face.iface.options || {};
