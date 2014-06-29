@@ -41,6 +41,8 @@ API.prototype.add = function add(handle, iface) {
 
 */
 API.prototype.request = function request(handle, params, options) {
+  assert(params, 'params cannot be empty');
+
   var face = this.handles[handle];
   assert(face, 'interface "' + handle + '" does not exit');
 
